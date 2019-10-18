@@ -30,22 +30,34 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.forEach  changes the original array and .map returns a new array without mutating the original array. 
+
 2. What is the difference between a function and a method?
+
+A method is a function that belongs to an object. 
 
 3. What is closure?
 
+Closires are functions that refer to independent (free) variables. AKA the function defined in the closure remembers the environment in which it was created. 
+
 4. Describe the four rules of the 'this' keyword.
 
+* 1. Implicit Binding- The 'this' keyword refers to what is left of the dot when the function is invoked
+* 2. Explicit Binding- Explicitly referencing what you want this to mean by using .call or .apply to pass the argument you want 'this' to apply to. 
+* 3. New Binding- Creates a constructor function which allows us to create new objects and save them. The 'this' keyword will refer to the new object that has been created. 
+* 4. Window Binding- If you invoke a function that uses the 'this' keyword and none of the above principles apply, then the 'this' keyword will default to the window object. 
+
 5. Why do we need super() in an extended class?
+It allows us to easily create an object with prototypical inheritance. 
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [ x] Create a forked copy of this project.
+- [ x] Add TL as collaborator on Github.
+- [x ] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
 - [ ] You are now ready to build this project with your preferred IDE
 - [ ] Implement the project on your Branch, committing changes regularly.
